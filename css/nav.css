@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "d_Cyberspace";
+    src: url("../fonts/Cyberspace.otf") format("truetype");
+}
+@font-face {
+    font-family: "EuropeExtendedC";
+    src: url("../fonts/Eurofont.otf") format("truetype");
+}
+.nav {
+    /*display: flex;*/
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1180px;
+    /*position: relative;*/
+    top: -25%;
+}
+.nav-1 {
+    font-family: EuropeExtendedC, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    color: black;
+}
+.nav-1:hover {
+    color: white;
+    transition: 0.5s ease-in;
+}
+
+.nav-text {
+    font-family: d_Cyberspace,sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.nav a {
+    color: white;
+}
+
+@media (max-width: 1130px) {
+    .nav {top: -35%;}
+}
+@media (max-width: 644px) {
+    .nav-1 {font-size: 16px;}
+    .nav-text {font-size: 13px;}
+}
+@media (max-width: 490px) {
+    .nav-1 {font-size: 12px;}
+    .nav-text {font-size: 9px;}
+}
+@media (max-width: 397px) {
+    .nav-1 {font-size: 11px;}
+    .nav-text {font-size: 7px;}
+}
+@media (max-width: 341px) {
+    .nav-1 {font-size: 8px;}
+    .nav-text {font-size: 6px;}
+}

@@ -1,0 +1,225 @@
+@import url('css/fonts.css');
+@import url('css/block_header.css');
+@import url('css/burger.css');
+@import url('css/footer.css');
+@import url('css/button_tgs.css');
+@import url('css/hover.css');
+@import url('css/nav.css');
+.bb {border: 1px solid red;}
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    background-color: black;
+    overflow-y: auto;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main {
+    position: relative;
+    top: 160px;
+    height: 800px;
+}
+
+.content-body {
+    height: 800px;
+    background-image: url("img/background/price.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content-block {
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(3px);
+    background: rgba(7, 7, 7, 0.5);
+}
+.content-block:hover {
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease-in-out;
+}
+
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: darkgray;
+}
+p a {
+    color: #9ef301;
+    font-size: 22px;
+    letter-spacing: 4px;
+}
+
+.service {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: "VoiceFont", sans-serif;
+    font-size: 34px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*btn*/
+.collapsible {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    left: 50%;
+    margin-top: 10%;
+    opacity: 65%;
+}
+.collapsible:after {
+    font-family: EuropeExtendedC,sans-serif;
+    letter-spacing: 2px;
+    content: 'Вернуться';
+}
+.active,.collapsible:hover{
+    background-color: rgba(150,150,150,0.5);
+    color: white;
+}
+
+.paragraph p {
+    font-family: "Letter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e3d283;
+    font-weight: 300;
+    padding: 15px;
+}
+
+.details {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.details-block {
+    display: block;
+}
+
+.title-2 {
+    display: block;
+    position: relative;
+}
+
+
+.details-block > button {
+    height: 45px;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+@media (max-width: 1130px) {
+    .content-body {
+        background-position: 50% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
+
+    .content-block {
+        backdrop-filter: blur(4px);
+        box-shadow: none;
+    }
+
+}
+
+@media (max-width: 490px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    .collapsible {
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 10%;
+    }
+}
+@media (max-width: 468px) {
+    h2 {
+        margin-top: 1%;
+        font-size: 26px;
+        line-height: 20px;
+        letter-spacing: 4px;
+    }
+    .collapsible {
+        margin-top: 10%;
+    }
+    .paragraph p {
+        font-size: 14px;
+    }
+    p a {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 100;
+    }
+}
+@media (max-width: 386px) {
+    .main {
+        top: 120px;}
+    h2 {
+        letter-spacing: 1px;
+        font-size: 22px;
+    }
+    .paragraph p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 299px) {
+    h2 {
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
+    .collapsible {
+        font-size: 10px;
+    }
+    p a {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+}
+
+
+

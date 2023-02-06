@@ -1,0 +1,166 @@
+@import url('css/fonts.css');
+@import url('css/block_header.css');
+@import url('css/burger.css');
+@import url('css/footer.css');
+@import url('css/button_tgs.css');
+@import url('css/hover.css');
+@import url('css/nav.css');
+/*@import url('css/telegram.css');*/
+.bb {border: 1px solid red;}
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main {
+    position: relative;
+    top: 160px;
+    height: 800px;
+}
+.content-body {
+    height: 800px;
+    background-image: url("img/background/diagnostic.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+.content-block {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.details-container {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
+.img {
+    width: 380px;
+    height: 388px;
+    display: flex;
+    position: relative;
+    background-image: url("img/catalog/engine.png");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 1;
+}
+
+.services-block-item {
+    display: block;
+    position: relative;
+    backdrop-filter: blur(3px);
+    background: rgba(7, 7, 7, 0.5);
+}
+.services-block-item:hover {
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease-in-out;
+}
+
+.paragraph {
+    font-family: "Letter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e3d283;
+    font-weight: 300;
+    padding: 15px;
+    line-height: 20px;
+}
+
+.collapsible {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 14px;
+    padding: 15px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    left: 50%;
+    margin-top: 3%;
+    opacity: 65%;
+    font-family: EuropeExtendedC,sans-serif;
+    letter-spacing: 2px;
+    justify-content: center;
+}
+.collapsible:after {
+    font-family: EuropeExtendedC,sans-serif;
+    letter-spacing: 2px;
+}
+.active,.collapsible:hover{
+    background-color: rgba(150,150,150,0.5);
+    color: white;
+}
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: darkgray;
+}
+.button {
+    width: 25%;
+    margin: 5% auto;
+}
+@media (max-width: 1190px) {
+    html,body {overflow-y: scroll;}
+}
+@media (max-width: 1000px) {
+    .img {display: none}
+}
+@media (max-width: 768px) {
+    body.lock {overflow: hidden;}
+    .services-block-item {backdrop-filter: blur(4px);}
+}
+@media (max-width: 495px) {
+    .button {margin: 0 auto 12%;}
+    .collapsible {
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 10%;
+    }
+}
+@media (max-width: 468px) {
+    .collapsible {margin-top: 1%;}
+    .paragraph p {font-size: 14px;}
+}
+@media (max-width: 385px) {
+    .main {margin-top: -15%;}
+    .paragraph p {font-size: 12px;}
+}
+@media (max-width: 299px) {
+    .collapsible {font-size: 10px;}
+    p a {
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+}
+
+
+
+
+

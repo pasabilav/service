@@ -1,0 +1,239 @@
+@import url('css/fonts.css');
+@import url('css/block_header.css');
+@import url('css/burger.css');
+@import url('css/footer.css');
+@font-face {
+    font-family: "EuropeExtendedC";
+    src: url("fonts/Eurofont.otf") format("truetype");
+}
+.bb {border: 1px solid red;}
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.main {
+    position: relative;
+    top: 160px;
+    height: 800px;
+}
+.content-body {
+    height: 800px;
+    background-image: url("img/background/index.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.content-block {
+    height: 800px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    backdrop-filter: blur(3px);
+}
+.content-block:hover {
+    background: rgba(7, 7, 7, 0.5);
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease-in-out;
+}
+.service {
+    margin-top: 5%;
+    height: 50%;
+    width: 33%;
+    align-items: center;
+    text-align: center;
+}
+.service:hover {
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(255, 255, 255, 0.2);
+    border-radius: 35px;
+    backdrop-filter: blur(5px);
+    transition: 0.4s ease-in-out;
+}
+.service a{text-decoration: none;}
+.box-icon-1 {
+    display: flex;
+    background-image: url("img/catalog/service.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 144px 144px;
+    border-radius: 50%;
+    height: 144px;
+    width: 144px;
+    margin: 5% auto;}
+.box-icon-2 {
+    display: flex;
+    background-image: url("img/catalog/computer-diagnostic.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 124px 124px;
+    border-radius: 50%;
+    height: 144px;
+    width: 144px;
+    margin: 5% auto;}
+.box-icon-3 {
+    display: flex;
+    background-image: url("img/catalog/oil.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 144px 144px;
+    border-radius: 50%;
+    height: 144px;
+    width: 144px;
+    margin: 5% auto;}
+
+h3 	{
+    font-family: "VoiceFont", sans-serif;
+    font-size: 36px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -3%;
+    letter-spacing: 4px;
+}
+.about-service {
+    font-family: "Letter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 10%;
+    color: #e3d283;
+    font-weight: 300;
+}
+.footer-body {
+    flex-direction: row;
+    font-style: normal;
+    height: 60px;
+}
+.footer-body a {
+    text-decoration: none;
+    color: black;
+    display: contents;
+    font-size: 18px;
+}
+
+@media (max-width: 1190px) {
+    html,body {overflow: scroll;}
+    h3 {font-size: 32px;}
+}
+@media (max-width: 1000px) {
+    h3 {font-size: 28px;}
+    /*.content-block {backdrop-filter: blur(0);}*/
+    .content-block:hover {
+        background: rgba(7, 7, 7, 0);
+        backdrop-filter: blur(0);
+        transition: 0s;}
+    .main {overflow: scroll}
+}
+@media (max-width: 910px) {
+    h3 {letter-spacing: 2px;}
+    .content-block {backdrop-filter: blur(0px);}
+    .service {backdrop-filter: blur(0px);}
+    .service:hover {
+        width: 0;
+        height: 100%;
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+        border-radius: 0;
+        transition: 0s;
+    }
+}
+@media (max-width: 768px) {
+    .footer-body a {font-size: 14px;letter-spacing: 2px;}
+    body.lock {overflow: hidden;}
+    main {overflow: hidden}
+    .content-body {height: 600px;background-size: 100%;}
+    .content-block {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: none;
+        padding: 1% 0 50%;
+        /*margin-top: 6%;*/
+        border-radius: 0;
+        backdrop-filter: blur(0px);
+    }
+    .content-block:hover{
+        background: rgba(7, 7, 7, 0);
+        transition: 0s;
+    }
+    h3 {letter-spacing: 5px;font-size: 32px;}
+    .about-service {display: none;}
+    .service {display: contents;}
+    .box-icon-1,.box-icon-2,.box-icon-3 {
+        height: 128px;
+        width: 128px;
+        background-size: contain;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 631px) {
+    html,body {overflow: hidden;}
+    h3 {display: none;}
+    .content-block {
+        margin-top: 0;
+        height: 600px;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .box-icon-1 {
+        height: 118px;
+        width: 118px;
+        background-size: 118px 118px;
+    }
+    .box-icon-2 {
+        height: 106px;
+        width: 106px;
+        background-size: 106px 106px;
+    }
+    .box-icon-3 {
+        height: 118px;
+        width: 118px;
+        background-size: 118px 118px;
+    }
+}
+@media (max-width: 387px) {
+    .footer-body a {
+        text-decoration: none;
+        font-size: 0;
+    }
+    .main {height: 650px;
+        top: 130px;}
+    .box-icon-1 {
+        height: 86px;
+        width: 86px;
+    background-size: 100% 100%}
+    .box-icon-2 {
+        height: 74px;
+        width: 74px;
+    background-size: 100% 100%}
+    .box-icon-3 {
+        height: 86px;
+        width: 86px;
+    background-size: 100% 100%}
+    .content-block {
+        height: 300px;
+        justify-content: space-around;
+    }
+}

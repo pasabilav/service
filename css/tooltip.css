@@ -1,0 +1,127 @@
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /*font-family: 'ArenqG',sans-serif;*/
+    /*font-family: 'Street',sans-serif;*/
+    /*font-family: 'site',sans-serif;*/
+    font-family: 'eurofont',sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+/* Tooltip text */
+.tooltip .tooltipText {
+    right: 61%;
+    /*visibility: hidden;*/
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    border-radius: 30px;
+    top: 33%;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    /*opacity: 0;*/
+    /* Fade in tooltip */
+    transition: opacity 0.3s;
+}
+
+.tooltip2 .tooltipText2 {
+    font-family: Xenotron,sans-serif;
+    font-size: 36px;
+    position: relative;
+    /*display: inline-block;*/
+    text-transform: uppercase;
+    font-weight: 10;
+    left: 10px;
+    top: -10px;
+}
+
+.tooltipText2 {
+    font-size: 34px;
+    color: white;
+    visibility: hidden;
+    text-align: center;
+    left: 19%;
+    align-items: center;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    /* Fade in tooltip */
+    transition: opacity 0.2s;
+}
+.tooltip3 .tooltipText3 {
+    font-family: Xenotron,sans-serif;
+    font-size: 36px;
+    position: relative;
+    /*display: inline-block;*/
+    text-transform: uppercase;
+    font-weight: 10;
+    left: 10px;
+    top: -20px;
+}
+
+.tooltipText3 {
+    font-size: 34px;
+    color: white;
+    visibility: hidden;
+    text-align: center;
+    left: 19%;
+    align-items: center;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    /* Fade in tooltip */
+    transition: opacity 0.2s;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltipText {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip2:hover .tooltipText2 {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip3:hover .tooltipText3 {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 767px) {
+    .tooltip .tooltipText {
+        visibility: hidden;
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+        border-radius: 30px;
+        top: 33%;
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        /* Fade in tooltip */
+        transition: opacity 0.3s;
+    }
+    .tooltip:hover .tooltipText {
+        visibility: hidden;
+        color: rgba(255,255,255,0.8);
+        text-align: center;
+        border-radius: 30px;
+        top: 33%;
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        /* Fade in tooltip */
+        transition: opacity 0.3s;
+    }
+    .tooltip2 {
+        height: 0;
+    }
+    .tooltip3 {
+        height: 0;
+    }
+}

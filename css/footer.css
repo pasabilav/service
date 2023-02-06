@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "EuropeExtendedC";
+    src: url("../fonts/Eurofont.otf") format("truetype");
+}
+.footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(48,48,48,1);
+}
+.footer-body {
+    position: relative;
+    flex-direction: column;
+    /*min-height: 60px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    vertical-align: center;
+    font-family: EuropeExtendedC,sans-serif;
+}
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer-icons {
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    bottom: 2%;
+    width: 30%;
+}
+.footer-body a {
+    text-decoration: none;
+}
+.footer-address a{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    font-family: EuropeExtendedC, sans-serif;
+}
+.footer-copyright,.footer-copyright-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(0,0,0,1);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.footer-address img {width: 28px;height: 18px;}
+
+@media (max-width: 1000px) {
+    .footer-address img {width: 26px;}
+}
+@media (max-width: 768px) {
+    .footer-copyright,.footer-copyright-name {font-size: 14px;letter-spacing: 2px;}
+    .footer-address a {font-size: 14px;letter-spacing: 2px;}
+    .footer-address img {width: 24px;}
+}
+@media (max-width: 631px) {.footer-copyright {display: none} .footer-address img {width: 22px;}
+.footer-icons {justify-content: space-between;bottom: 10%;
+    width: 90%;}}
+@media (max-width: 387px) {
+    .footer-address img {width: 34px;}
+    .footer-copyright-name {font-size: 18px;letter-spacing: 1px;}
+    .footer-address a {font-size: 18px;letter-spacing: 1px;}
+}

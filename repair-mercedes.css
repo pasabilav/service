@@ -1,0 +1,159 @@
+@import url('css/fonts.css');
+@import url('css/block_header.css');
+@import url('css/burger.css');
+@import url('css/footer.css');
+@import url('css/button_tgs.css');
+@import url('css/hover.css');
+@import url('css/nav.css');
+.bb {border: 1px solid red;}
+*,*:before,*:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    background-color: black;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main {
+    position: relative;
+    top: 160px;
+    height: 800px;
+}
+.content-body {
+    height: 800px;
+    background-image: url("img/background/service.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+.content-block {
+    height: 800px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    backdrop-filter: blur(3px);
+    background: rgba(7, 7, 7, 0.5);
+}
+.content-block:hover {
+    backdrop-filter: blur(5px);
+    transition: 0.5s ease-in-out;
+}
+.services {
+    max-height: 800px;
+    position: relative;
+    display: flow-root;
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+}
+h2 {
+    font-family: "VoiceFont", sans-serif;
+    font-size: 34px;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.collapsible {
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    left: 50%;
+    margin-top: 10%;
+    opacity: 65%;
+}
+.collapsible.active:after{
+    color: #8a8a8a;
+    content: 'Скрыть';
+}
+.collapsible:after {
+    font-family: EuropeExtendedC,sans-serif;
+    letter-spacing: 2px;
+    content: 'Детали';
+}
+.active,.collapsible:hover{
+    background-color: rgba(150,150,150,0.5);
+    color: white;
+}
+
+.paragraph {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+}
+
+.paragraph h3 {
+    font-family: "Letter", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #e3d283;
+    font-weight: 300;
+    padding: 15px;
+}
+
+@media (max-width: 1130px) {
+    h2 {font-size: 28px;}
+    .content-body {
+        background-position: 50% 50%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    .content-block {backdrop-filter: blur(3px);box-shadow: none;}
+}
+@media (max-width: 590px) {
+    .collapsible {margin-top: 5%;}
+}
+@media (max-width: 495px) {
+    .collapsible {
+        font-size: 13px;
+        padding: 5px 10px;
+        border-radius: 10%;
+    }
+    .services {line-height: 80px;}
+    .paragraph {line-height: 25px;}
+}
+@media (max-width: 468px) {
+    h2 {
+        font-size: 26px;
+        line-height: 20px;
+        letter-spacing: 4px;
+    }
+    h3 {font-size: 14px;}
+    .paragraph {line-height: 20px;}
+}
+@media (max-width: 387px) {
+    .main {top: 105px;}
+    .services {margin: 0 0;}
+    .content-body {margin-top: 0;}
+    h2 {letter-spacing: 1px;font-size: 22px;}
+    h3 {font-size: 12px;}
+}
+@media (max-width: 387px) {
+    h2 {font-size: 21px;}
+}
+

@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "korataki";
+    src: url("../fonts/korataki.otf") format("truetype");
+}
+header {
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 50;
+}
+.header-block {
+    margin-top: 80px;
+    background: black;
+}
+
+.header-title {position: relative;}
+
+h1 {
+    font-family: "korataki", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255,255,255,1);
+}
+
+.header-subtitle {
+    font-family: "korataki", sans-serif;
+    font-style: normal;
+    font-size: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e3d283;
+}
+@media (max-width: 1440px) {
+    .header-title {
+        background: black;
+        display: contents;
+    }
+}
+@media (max-width: 1130px) {
+    .header-block {
+        flex-direction: column;
+        min-width: 100%;
+        background-color: black;
+        z-index: 5;
+        left: 0;
+    }
+    .header-fix {
+        height: 85px;
+        flex-direction: column;
+        min-width: 100%;
+        background-color: black;
+    }
+}
+@media (max-width: 1000px) {
+    .header-fix {
+        height: 80px;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        background-color: black;
+        z-index: 5;
+        left: 0;
+    }
+}
+@media (max-width: 631px) {
+    h1 {font-size: 24px;letter-spacing: 3px;}
+    .header-subtitle {font-size: 31px;}
+}
+@media (max-width: 490px) {
+    h1 {font-size: 21px;}
+    .header-subtitle {font-size: 28px;}
+}
+@media (max-width: 387px) {
+    .header-fix {height: 60px;}
+    h1 {
+        font-size: 16px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+    .header-subtitle {font-size: 23px;}
+}
+@media (max-width: 327px) {
+    h1 {font-size: 13px;line-height: 20px;}
+    .header-subtitle {font-size: 20px;}
+    .header-fix {height: 45px;}
+}

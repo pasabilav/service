@@ -1,0 +1,71 @@
+.btn-call--ico {
+	transition: .3s all;
+	background-image: url("../img/footer/phone.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 36px;
+	width: 36px;
+}
+
+.btn-google--ico {
+	transition: .3s all;
+	background-image: url("../img/footer/geo.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 36px;
+	width: 36px;
+}
+
+.btn-rate--ico {
+	transition: .3s all;
+	background-image: url("../img/footer/review.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 36px;
+	width: 36px;
+}
+
+@keyframes cssload-scale {
+	0% { transform: scale(0); transform: scale(0); }
+	90% { transform: scale(0.7); transform: scale(0.7); }
+	100% { transform: scale(1); transform: scale(1); }
+}
+
+@-o-keyframes cssload-scale {
+	0% { -o-transform: scale(0); transform: scale(0); }
+	90% { -o-transform: scale(0.7); transform: scale(0.7); }
+	100% { -o-transform: scale(1); transform: scale(1); }
+}
+
+@-ms-keyframes cssload-scale {
+	0% { -ms-transform: scale(0); transform: scale(0); }
+	90% { -ms-transform: scale(0.7); transform: scale(0.7); }
+	100% { -ms-transform: scale(1); transform: scale(1); }
+}
+
+@-webkit-keyframes cssload-scale {
+	0% { -webkit-transform: scale(0); transform: scale(0); }
+	90% { -webkit-transform: scale(0.7); transform: scale(0.7); }
+	100% { -webkit-transform: scale(1); transform: scale(1); }
+}
+
+@-moz-keyframes cssload-scale {
+	0% { -moz-transform: scale(0); transform: scale(0); }
+	90% { -moz-transform: scale(0.7); transform: scale(0.7); }
+	100% { -moz-transform: scale(1); transform: scale(1); }
+}
+
+@media (max-width: 631px) {
+	.btn-google--ico,.btn-rate--ico,.btn-call--ico {
+		height: 45px;
+		width: 45px;
+		background-size: 100% 100%;
+	}
+
+}
+@media (max-width: 326px) {
+	.btn-google--ico,.btn-rate--ico,.btn-call--ico {
+		height: 36px;
+		width: 36px;
+	}
+}

@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "Xenotron";
+	src: url("../fonts/Xenotron.ttf") format("truetype");
+}
+@font-face {
+	font-family: 'Audiowide', sans-serif;
+	src: url('../fonts/Audiowide-Regular.ttf') format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Street";
+	src: url("../fonts/street.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Arounder';
+	src: url("../fonts/Arounder.otf") format("truetype");
+}
+@font-face {
+	font-family: 'Carbon2';
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/0_ljk_Carbon2.otf") format("truetype");
+}
+@font-face {
+	font-family: "Cyberspace";
+	src: url("../fonts/Cyberspace.otf") format("truetype");
+}
+@font-face {
+	font-family: "VoiceFont";
+	src: url("../fonts/VoiceFont.otf") format("truetype");
+}
+@font-face {
+	font-family: "PROCyr";
+	src: url("../fonts/PROCyr.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Eurofont";
+	src: url("../fonts/Eurofont.otf") format("truetype");
+}
+@font-face {
+	font-family: "aldrich";
+	src: url("../fonts/aldrich.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Letter";
+	src: url("../fonts/Letter.otf") format("truetype");
+}
+@font-face {
+	font-family: "korataki";
+	src: url("../fonts/korataki.otf") format("truetype");
+}
+@font-face {
+	font-family: "europe";
+	src: url("../fonts/europe.otf") format("truetype");
+}
+

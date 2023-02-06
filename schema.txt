@@ -1,0 +1,44 @@
+<script type="application/ld+json">
+        {
+            "@context" : "http://schema.org",
+            "@type" : "Organization",
+            "name" : "Master Benz",
+            "description": "Автосервис Master Benz занимается ремонтом всех моделей Mercedes Benz. Наш профессиональный опыт составляет более 20 лет! Надежность и гарантия",
+            "url": "https://master-benz.com.ua",
+            "image" : "https://master-benz.com.ua/img/burger/logo.png",
+            "telephone" : [ "063 557 5953", "066 701 9914" ],
+            "address" : {
+                "@type" : "PostalAddress",
+                "streetAddress" : "Бойчука 43",
+                "addressLocality" : "Киев",
+                "addressRegion" : "Киевская область",
+                "addressCountry" : "Украина",
+                "postalCode" : "02000"
+            },
+            "review": {
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5"
+                }
+                },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 50.4043,
+                "longitude": 30.5547
+            },
+            "openingHoursSpecification": [{
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Пн",
+                    "Вт",
+                    "Ср",
+                    "Чт",
+                    "Пт"
+                ],
+                "opens": "10:00",
+                "closes": "18:00"
+            }]
+        }
+    </script>
